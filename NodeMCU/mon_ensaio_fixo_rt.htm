@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+
+<script>
+	$(document).ready(function() 
+	{
+		setInterval(function() {
+		$("#table").load("table_ensaio_fixo_rt.php");
+		refresh();
+		}, 3000);
+	});
+</script>
+
+</head>
+<body>
+	<center>
+		<h1>Tabela de Medidas</h1>
+		<h2>Ensaio com modulo laser fixo e blocos grandes</h2>
+		<hr/>
+		<div id="table"></div> 
+	</center>
+</body>
+</html>
